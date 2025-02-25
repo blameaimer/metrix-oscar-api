@@ -1,99 +1,100 @@
-<p align="center">
-  <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="120" alt="Nest Logo" /></a>
-</p>
+<div align="center">
+  <img src="https://bs-uploads.toptal.io/blackfish-uploads/components/seo/content/og_image_file/og_image/777184/secure-rest-api-in-nodejs-18f43b3033c239da5d2525cfd9fdc98f.png" alt="NodeJS LOGO" width=800 />
+  <p></p>
+  <h1>Oscar Winners Overview</h1>
+  <br />
+</div>
 
-[circleci-image]: https://img.shields.io/circleci/build/github/nestjs/nest/master?token=abc123def456
-[circleci-url]: https://circleci.com/gh/nestjs/nest
+## 👋 Intro
 
-  <p align="center">A progressive <a href="http://nodejs.org" target="_blank">Node.js</a> framework for building efficient and scalable server-side applications.</p>
-    <p align="center">
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/v/@nestjs/core.svg" alt="NPM Version" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/l/@nestjs/core.svg" alt="Package License" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/dm/@nestjs/common.svg" alt="NPM Downloads" /></a>
-<a href="https://circleci.com/gh/nestjs/nest" target="_blank"><img src="https://img.shields.io/circleci/build/github/nestjs/nest/master" alt="CircleCI" /></a>
-<a href="https://coveralls.io/github/nestjs/nest?branch=master" target="_blank"><img src="https://coveralls.io/repos/github/nestjs/nest/badge.svg?branch=master#9" alt="Coverage" /></a>
-<a href="https://discord.gg/G7Qnnhy" target="_blank"><img src="https://img.shields.io/badge/discord-online-brightgreen.svg" alt="Discord"/></a>
-<a href="https://opencollective.com/nest#backer" target="_blank"><img src="https://opencollective.com/nest/backers/badge.svg" alt="Backers on Open Collective" /></a>
-<a href="https://opencollective.com/nest#sponsor" target="_blank"><img src="https://opencollective.com/nest/sponsors/badge.svg" alt="Sponsors on Open Collective" /></a>
-  <a href="https://paypal.me/kamilmysliwiec" target="_blank"><img src="https://img.shields.io/badge/Donate-PayPal-ff3f59.svg" alt="Donate us"/></a>
-    <a href="https://opencollective.com/nest#sponsor"  target="_blank"><img src="https://img.shields.io/badge/Support%20us-Open%20Collective-41B883.svg" alt="Support us"></a>
-  <a href="https://twitter.com/nestframework" target="_blank"><img src="https://img.shields.io/twitter/follow/nestframework.svg?style=social&label=Follow" alt="Follow us on Twitter"></a>
-</p>
-  <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
-  [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
+**Oscar Winners Overview** is a RESTful API built with **NestJS** and **MongoDB**. It enables users to manage Oscar-winning movies, featuring CRUD operations, search, pagination, and sorting. The project follows the **MVC architecture**, integrates **Swagger** for API documentation, and includes **Jest** for testing.
 
-## Description
+---
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+## ⚡ Technologies Used
 
-## Project setup
+- [Node.js](https://nodejs.org/)
+- [NestJS](https://nestjs.com/)
+- [MongoDB](https://www.mongodb.com/)
+- [Mongoose](https://mongoosejs.com/)
+- [Swagger](https://swagger.io/)
+- [Jest](https://jestjs.io/)
+- [Docker](https://www.docker.com/) _(optional)_
+- [OpenAPI](https://www.openapis.org/) _(optional)_
 
-```bash
-$ npm install
-```
+---
 
-## Compile and run the project
+## 🚀 Getting Started
 
-```bash
-# development
-$ npm run start
+- In your terminal go into a directory and then run the following command:
 
-# watch mode
-$ npm run start:dev
+        git clone https://github.com/your-username/metrix-oscar-api.git
+        cd metrix-oscar-api
 
-# production mode
-$ npm run start:prod
-```
+- Run this code in your terminal:
 
-## Run tests
+        npm i
 
-```bash
-# unit tests
-$ npm run test
+- After you have installed them setup your .env files for DB connection:
 
-# e2e tests
-$ npm run test:e2e
+       MONGO_URI=mongodb://localhost:27017/oscar_db
+       PORT=3000
 
-# test coverage
-$ npm run test:cov
-```
+- DB Seeding
 
-## Deployment
+      npm run seed
 
-When you're ready to deploy your NestJS application to production, there are some key steps you can take to ensure it runs as efficiently as possible. Check out the [deployment documentation](https://docs.nestjs.com/deployment) for more information.
+## 🧪 Running Tests
 
-If you are looking for a cloud-based platform to deploy your NestJS application, check out [Mau](https://mau.nestjs.com), our official platform for deploying NestJS applications on AWS. Mau makes deployment straightforward and fast, requiring just a few simple steps:
+Run Tests:
 
-```bash
-$ npm install -g mau
-$ mau deploy
-```
+      npm run test:cov
+      you access swagger for further testing here : http://localhost:3000/api
 
-With Mau, you can deploy your application in just a few clicks, allowing you to focus on building features rather than managing infrastructure.
+## 🎬 API Endpoints
 
-## Resources
+      Method	Endpoint	Description
+      POST	/movies	Create a new movie
+      GET	/movies	Get all movies (pagination, search)
+      GET	/movies/winners	Get all winning movies
+      GET	/movies/{id}	Get a movie by ID
+      PATCH	/movies/{id}	Update a movie by ID
+      DELETE	/movies/{id}	Delete a movie by ID
+      Sample Query Params for /movies:/movies?search=Godfather&sortBy=title&order=asc&limit=10&page=1
 
-Check out a few resources that may come in handy when working with NestJS:
+## 🐳 Docker (Optional)
 
-- Visit the [NestJS Documentation](https://docs.nestjs.com) to learn more about the framework.
-- For questions and support, please visit our [Discord channel](https://discord.gg/G7Qnnhy).
-- To dive deeper and get more hands-on experience, check out our official video [courses](https://courses.nestjs.com/).
-- Deploy your application to AWS with the help of [NestJS Mau](https://mau.nestjs.com) in just a few clicks.
-- Visualize your application graph and interact with the NestJS application in real-time using [NestJS Devtools](https://devtools.nestjs.com).
-- Need help with your project (part-time to full-time)? Check out our official [enterprise support](https://enterprise.nestjs.com).
-- To stay in the loop and get updates, follow us on [X](https://x.com/nestframework) and [LinkedIn](https://linkedin.com/company/nestjs).
-- Looking for a job, or have a job to offer? Check out our official [Jobs board](https://jobs.nestjs.com).
+Build & Run with Docker:
 
-## Support
+    docker-compose up --build
+    Docker Compose Example:
+    yaml
+    version: '3.8'
 
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
+    services:
+      mongo:
+        image: mongo
+        ports:
+          - "27017:27017"
+        volumes:
+          - mongo-data:/data/db
 
-## Stay in touch
+      api:
+        build: .
+        ports:
+          - "3000:3000"
+        env_file:
+          - .env
+        depends_on:
+          - mongo
 
-- Author - [Kamil Myśliwiec](https://twitter.com/kammysliwiec)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
+    volumes:
+      mongo-data:
 
-## License
+## 👊 Further Help?
 
-Nest is [MIT licensed](https://github.com/nestjs/nest/blob/master/LICENSE).
+For questions, feel free to reach out! <br />
+📧 contact me via e-mail RaymundTech@protonmail.com <br/>
+© Raymund Noel Gyuris <br />
+
+<br />
