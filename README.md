@@ -30,7 +30,7 @@
 - In your terminal go into a directory and then run the following command:
 
         git clone https://github.com/your-username/metrix-oscar-api.git
-cd metrix-oscar-api
+        cd metrix-oscar-api
 
 - Run this code in your terminal:
 
