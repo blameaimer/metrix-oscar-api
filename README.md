@@ -2,22 +2,6 @@
   <img src="https://bs-uploads.toptal.io/blackfish-uploads/components/seo/content/og_image_file/og_image/777184/secure-rest-api-in-nodejs-18f43b3033c239da5d2525cfd9fdc98f.png" alt="NodeJS LOGO" width=800 />
   <p></p>
   <h1>Oscar Winners Overview</h1>
-  <p></p>
-  <sup>
-    <a href="https://github.com/your-username/oscar-winners-backend/actions">
-      <img src="https://github.com/your-username/oscar-winners-backend/actions/workflows/actions.yml/badge.svg" />
-    </a>
-  </sup>
-  <br />
-  <p align="center">
-    <a href="#-intro"><b>What is this?</b></a>
-    &nbsp;&nbsp;&mdash;&nbsp;&nbsp;
-    <a href="https://your-deployment-link.com/api"><b>Hosted Version</b></a>
-    &nbsp;&nbsp;&mdash;&nbsp;&nbsp;
-    <a href="#-getting-started"><b>Usage</b></a>
-    &nbsp;&nbsp;&mdash;&nbsp;&nbsp;
-    <a href="#-further-help"><b>Need help?</b></a>
-  </p>
   <br />
 </div>
 
