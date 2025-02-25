@@ -5,6 +5,7 @@
   <br />
 </div>
 
+
 ## 👋 Intro
 
 **Oscar Winners Overview** is a RESTful API built with **NestJS** and **MongoDB**. It enables users to manage Oscar-winning movies, featuring CRUD operations, search, pagination, and sorting. The project follows the **MVC architecture**, integrates **Swagger** for API documentation, and includes **Jest** for testing.
@@ -13,14 +14,14 @@
 
 ## ⚡ Technologies Used
 
-- [Node.js](https://nodejs.org/)
-- [NestJS](https://nestjs.com/)
-- [MongoDB](https://www.mongodb.com/)
-- [Mongoose](https://mongoosejs.com/)
-- [Swagger](https://swagger.io/)
-- [Jest](https://jestjs.io/)
-- [Docker](https://www.docker.com/) _(optional)_
-- [OpenAPI](https://www.openapis.org/) _(optional)_
+- [Node.js](https://nodejs.org/)  
+- [NestJS](https://nestjs.com/)  
+- [MongoDB](https://www.mongodb.com/)  
+- [Mongoose](https://mongoosejs.com/)  
+- [Swagger](https://swagger.io/)  
+- [Jest](https://jestjs.io/)  
+- [Docker](https://www.docker.com/) *(optional)*  
+- [OpenAPI](https://www.openapis.org/) *(optional)*  
 
 ---
 
@@ -39,20 +40,16 @@
 
        MONGO_URI=mongodb://localhost:27017/oscar_db
        PORT=3000
-
-- DB Seeding
+- DB Seeding 
 
       npm run seed
-
 ## 🧪 Running Tests
-
 Run Tests:
 
       npm run test:cov
       you access swagger for further testing here : http://localhost:3000/api
 
 ## 🎬 API Endpoints
-
       Method	Endpoint	Description
       POST	/movies	Create a new movie
       GET	/movies	Get all movies (pagination, search)
@@ -61,16 +58,14 @@ Run Tests:
       PATCH	/movies/{id}	Update a movie by ID
       DELETE	/movies/{id}	Delete a movie by ID
       Sample Query Params for /movies:/movies?search=Godfather&sortBy=title&order=asc&limit=10&page=1
-
 ## 🐳 Docker (Optional)
-
 Build & Run with Docker:
 
     docker-compose up --build
     Docker Compose Example:
     yaml
     version: '3.8'
-
+    
     services:
       mongo:
         image: mongo
@@ -78,7 +73,7 @@ Build & Run with Docker:
           - "27017:27017"
         volumes:
           - mongo-data:/data/db
-
+    
       api:
         build: .
         ports:
@@ -87,13 +82,11 @@ Build & Run with Docker:
           - .env
         depends_on:
           - mongo
-
+    
     volumes:
       mongo-data:
-
 ## 👊 Further Help?
-
-For questions, feel free to reach out! <br />
+For questions, feel free to reach out!  <br />
 📧 contact me via e-mail RaymundTech@protonmail.com <br/>
 © Raymund Noel Gyuris <br />
 
